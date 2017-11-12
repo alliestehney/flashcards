@@ -54,13 +54,9 @@ export default function(state = INITIAL_STATE, action) {
 
 			 	// add to new array
 			 	shuffledCards.push(itemToRemove);
-			 	
 
 			 	// remove from first array (so you can grab other cards)
 			 	newCardList.splice(index, 1);
-			 	// for (var i=0; i<newCardList.length; i++) {
-			 	// 	console.log(newCardList[i]);
-			 	// }
 
 			 	return newCardList;
 			}
@@ -75,6 +71,7 @@ export default function(state = INITIAL_STATE, action) {
 			console.log(shuffledCards);
 
 			return Object.assign({}, state, {
+				currentCardIndex:0,
 				cards: shuffledCards
 			});
 		
