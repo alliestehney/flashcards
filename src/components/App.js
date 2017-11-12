@@ -9,11 +9,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      		<Card />
-          <PrevButton />
+          <div className="FlashControls">
+          		<PrevButton className="directionBtns" />
+              <Card />
+              <NextButton className="directionBtns"/>
+          </div>
       		<FlipButton />
           <Shuffle />
-          <NextButton />
       </div>
     );
   }

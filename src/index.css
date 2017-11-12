@@ -6,10 +6,11 @@ body {
 
 .CardLayout {
 	border: 1px solid black;
-	margin: 30px 80px;
-	padding: 30px;
+	margin: 4% 30%;
+	padding: 8% 0;
 	font-size: 16px;
 	text-align: center;
+	width: 40%;
 }
 
 /*.FlipButton {
@@ -31,3 +32,12 @@ body {
 	text-align: center;
 	font-size: 12px;
 }*/
+
+.FlashControls {
+	display: flex;
+}
+
+.PrevButton, .NextButton {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
