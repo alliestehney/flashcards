@@ -37,6 +37,10 @@ body {
 	outline: none;
 }
 
+.NextButton:disabled, .PrevButton:disabled {
+	color: #D3D3D3;
+}
+
 .PrevButton:hover, .NextButton:hover {
 	color: #D3D3D3;
 	cursor: pointer;
