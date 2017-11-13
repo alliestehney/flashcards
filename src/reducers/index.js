@@ -15,12 +15,14 @@ export default function(state = INITIAL_STATE, action) {
 	switch(action.type) {
 		case "NEXT":
 			return Object.assign({}, state, {
-				currentCardIndex: state.currentCardIndex + 1
+				currentCardIndex: state.currentCardIndex + 1,
+				isFront: true
 			});
 
 		case "PREV":
 			return Object.assign({}, state, {
-				currentCardIndex: state.currentCardIndex -1
+				currentCardIndex: state.currentCardIndex -1,
+				isFront: true
 			});
 
 		case "FLIP":
