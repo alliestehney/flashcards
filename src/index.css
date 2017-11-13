@@ -2,42 +2,82 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .CardLayout {
 	border: 1px solid black;
-	margin: 4% 30%;
 	padding: 8% 0;
 	font-size: 16px;
 	text-align: center;
 	width: 40%;
+	margin: 0% 2%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background-color: #778899;
+	border: none;
+	color: white;
+	font-size: 24px;
 }
-
-/*.FlipButton {
-	border: 1px solid black;
-	border-radius: 50%;
-	padding: 2%;
-	width: 15px;
-	height: 15px;
-	text-align: center;
-	font-size: 12px;
-}
-
-.NextButton {
-	border: 1px solid black;
-	border-radius: 50%;
-	padding: 2%;
-	width: 15px;
-	height: 15px;
-	text-align: center;
-	font-size: 12px;
-}*/
 
 .FlashControls {
 	display: flex;
+	justify-content: center;
+	margin-top: 2%;
 }
 
 .PrevButton, .NextButton {
 	margin-top: 10%;
 	margin-bottom: 10%;
+	padding: 1%;
+	font-size: 50px;
+	color: #778899;
+	border: none;
+	background-color: white;
+}
+
+.PrevButton:hover, .NextButton:hover {
+	color: #D3D3D3;
+	cursor: pointer;
+	outline: none;
+}
+
+.OtherButtons {
+	text-align: center;
+	margin-top: 1%;
+}
+
+.ShuffleButton {
+	padding: 1%;
+	border: 3px solid #778899;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	margin-right: 1%;
+	background-color: white;
+	border-radius: 5%;
+}
+
+.ShuffleButton:hover, .FlipButton:hover {
+	cursor: pointer;
+	border: none;
+	background-color: #778899;
+	color: white;
+	font-weight: 400;
+	outline: none;
+}
+
+.FlipButton {
+	padding: 1%;
+	border: 3px solid #778899;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 5%;
+}
+
+h1 {
+	font-weight: 300;
+	text-align: center;
 }

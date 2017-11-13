@@ -9,13 +9,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+          <h1>Allie's Flashcards App!</h1>
           <div className="FlashControls">
           		<PrevButton className="directionBtns" />
               <Card />
               <NextButton className="directionBtns"/>
           </div>
-      		<FlipButton />
-          <Shuffle />
+          <div className="OtherButtons">
+              <Shuffle />
+          		<FlipButton />
+          </div>
       </div>
     );
   }
